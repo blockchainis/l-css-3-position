@@ -1,5 +1,7 @@
 import GlobalStyle from "./GlobalStyle";
 import styled from "styled-components";
+import { CiCircleChevRight } from "react-icons/ci";
+
 const Container = styled.div`
   display: flex;
   width: 100vw;
@@ -26,6 +28,15 @@ const GreenBox = styled.div`
   height: 200px;
   background-color: green;
   border: 1px solid black;
+  position: relative;
+`;
+
+const BigCircleIcon = styled(CiCircleChevRight)`
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -50px;
+  top: 50px;
 `;
 
 function App() {
@@ -35,7 +46,9 @@ function App() {
       <Container>
         <BlueBox></BlueBox>
         <RedBox></RedBox>
-        <GreenBox></GreenBox>
+        <GreenBox>
+          <BigCircleIcon />
+        </GreenBox>
       </Container>
     </>
   );
