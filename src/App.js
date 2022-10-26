@@ -28,15 +28,11 @@ const GreenBox = styled.div`
   height: 200px;
   background-color: green;
   border: 1px solid black;
-  position: relative;
 `;
 
 const BigCircleIcon = styled(CiCircleChevRight)`
   width: 100px;
   height: 100px;
-  position: absolute;
-  right: -50px;
-  top: 50px;
 `;
 
 function App() {
@@ -46,9 +42,8 @@ function App() {
       <Container>
         <BlueBox></BlueBox>
         <RedBox></RedBox>
-        <GreenBox>
-          <BigCircleIcon />
-        </GreenBox>
+        <GreenBox></GreenBox>
+        <BigCircleIcon />
       </Container>
     </>
   );
